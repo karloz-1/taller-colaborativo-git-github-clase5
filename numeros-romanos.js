@@ -1,6 +1,5 @@
 const readline = require('readline');
 
-// Tu función del conversor de números romanos
 function romano(num){
     const valores = [
         {valor: 1000, simbolo: "M"},
@@ -28,13 +27,11 @@ function romano(num){
     return resultado;
 }
 
-// Interfaz para interactuar con la terminal
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-// Pregunta por el número en la terminal
 rl.question('Digita un número entero (entre 1 y 3999): ', (respuesta) => {
     const numeroIngresado = parseInt(respuesta);
     
